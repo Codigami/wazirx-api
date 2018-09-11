@@ -54,3 +54,30 @@
         ]
     }
     ```
+    
+    `markets` key have multiple market related configuration and description of every field in market is as below:
+    
+    1. `baseMarket`: code of base currency
+    1. `quoteMarket`: code of quote currency
+    1. `minBuyAmount`: Minimum buy amount of base currency
+    1. `minSellAmount`: Minumum sell amount of base currency
+    1. `fee`: JSON Object consists of `bid` and `ask` order's maker-taker fee percentage
+    1. `basePrecision`: Maximum precision of base currency 
+    1. `quotePrecision`: Maximum  precision of quote currency
+    1. `low`: 24 hrs lowest price of base currency
+    1. `high`: 24 hrs highest price of base currency
+    1. `last`: Last traded price in current market
+    1. `open`: Market Open price
+    1. `volume`: Last 24hrs traded volume
+    1. `sell`: Top ask order price
+    1. `buy`: Top bid order price
+    
+    `assets` key have multiple currency related configuration as described below:
+    
+    1. `type`: Currency code
+    1. `name`: Display name of asset
+    1. `withdrawFee`: Withdrawal fee of asset
+    1. `minWithdrawAmount`: Minimum withdrawal amount in single transaction
+    1. `maxWithdrawAmount`: Maximum withdrawal amount in single transaction
+    1. `deposit`: Denotes whether deposit is enabled or disabled
+    1. `withdrawal`: Denotes whether withdrawal is enabled or disabled
